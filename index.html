@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digimon - Mundo Digital</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #ff6f00;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .digimon-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 1rem;
+            width: calc(33.33% - 2rem);
+            text-align: center;
+            transition: transform 0.3s ease;
+            padding: 1rem;
+        }
+        .digimon-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .digimon-card h2 {
+            font-size: 1.8rem;
+            margin: 1rem 0;
+        }
+        .digimon-card p {
+            color: #555;
+            font-size: 1rem;
+        }
+        .digimon-card button {
+            padding: 0.5rem 1rem;
+            background-color: #ff6f00;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .digimon-card button:hover {
+            background-color: #ff8f33;
+        }
+        .digimon-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Digimon - Mundo Digital</h1>
+</header>
+
+<div class="container">
+    <div class="digimon-card">
+        <img src="https://via.placeholder.com/400x200?text=Agumon" alt="Agumon">
+        <h2>Agumon</h2>
+        <p>Agumon é o parceiro de Tai, um dos principais digimons da série. Ele é um Digimon do tipo "Reptil" e possui várias evoluções poderosas.</p>
+        <button onclick="showDetails('Agumon', 'Agumon, o Digimon que evolui para Greymon e outros.')">Ver Detalhes</button>
+    </div>
+    <div class="digimon-card">
+        <img src="https://via.placeholder.com/400x200?text=Gabumon" alt="Gabumon">
+        <h2>Gabumon</h2>
+        <p>Gabumon é o parceiro de Matt. Com sua lealdade e coragem, ele também possui incríveis transformações, como Garurumon.</p>
+        <button onclick="showDetails('Gabumon', 'Gabumon, o Digimon fiel que evolui para Garurumon.')">Ver Detalhes</button>
+    </div>
+    <div class="digimon-card">
+        <img src="https://via.placeholder.com/400x200?text=Pikmon" alt="Pikmon">
+        <h2>Pikmon</h2>
+        <p>Pikmon é um Digimon que possui uma aparência fofa, e é parte da série de Digimons que aparecem em diferentes episódios.</p>
+        <button onclick="showDetails('Pikmon', 'Pikmon, o Digimon de aparência fofa e divertido.')">Ver Detalhes</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Digimon - Mundo Digital</p>
+</footer>
+
+<script>
+    function showDetails(digimonName, description) {
+        alert("Detalhes do Digimon: " + digimonName + "\n" + description);
+    }
+</script>
+
+</body>
+</html>
